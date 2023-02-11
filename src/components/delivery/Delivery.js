@@ -3,6 +3,9 @@ import Filter from "../common/filters/Filter";
 import { BsFilterCircleFill } from "react-icons/bs";
 import { MdDeliveryDining } from "react-icons/md";
 import DeliveryCollection from "./deliveryCollection/DeliveryCollection";
+import TopBrand from "./topBrands/TopBrand";
+import Explore from "../common/explore/Explore";
+import { Resturant } from "../../data/Resturants";
 
 const deliverFilter = [
   {
@@ -33,6 +36,7 @@ const deliverFilter = [
   },
 ];
 
+const resturantsList = Resturant;
 const Delivery = () => {
   return (
     <div>
@@ -40,6 +44,8 @@ const Delivery = () => {
         <Filter filterList={deliverFilter} />
       </div>
       <DeliveryCollection/>
+      <TopBrand/>
+      <Explore list={resturantsList} collectionName='Delivery Restaurants in Delhi NCR'/>
     </div>
   );
 };

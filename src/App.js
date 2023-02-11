@@ -1,6 +1,6 @@
 import Home from './pages/home/Home';
 
-// 1:50 mins
+// 3: 08 mins
 
 function App() {
   return (
