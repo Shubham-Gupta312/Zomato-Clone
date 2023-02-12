@@ -1,0 +1,5 @@
+.footer{
+    background-color: var(--filter-text);
+    padding: 4px 0 4px 0;
+    color: var(--inactive-color);
+}

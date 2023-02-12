@@ -7,8 +7,8 @@ const Explore = ({list, collectionName}) => {
     <div className='max-width  explore-section'>
       <div className='collection-title'>{collectionName}</div>
       <div className='explore-grid'>
-        {list.map((resturant)=>{
-            return <ExploreCard resturant={resturant}/>
+        {list.map((resturant, i)=>{
+            return <ExploreCard resturant={resturant} i={i}/>
         })}
       </div>
     </div>
